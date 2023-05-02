@@ -5,38 +5,40 @@
 <title>Aula 04</title>
 </head>
 <body>
-	<h1>Cadastro de Animais</h1>
+	<h1>Calculadora</h1>
 	
-	<form action="cadastro.jsp" method="post">
+	<form action="operacoes.jsp" method="post">
 		<fielset>
-			<legend>Dados do Animal</legend>
 			
 			<p>
-				<label for="nome">Nome: </label>
-				<input type="text" id="nome" name="nome">
+				<label for="nome">Número 1: </label>
+				<input type="text" id="numero1" name="numero1">
 			</p>
 			
 			<p>
-				<label for="nome">Idade: </label>
-				<input type="text" id="idade" name="idade">
+				<label for="nome">Número 2: </label>
+				<input type="text" id="numero2" name="numero2">
 			</p>
 			
 			<p>
-				<label for="nome">Peso: </label>
-				<input type="text" id="peso" name="peso">
-			</p>
-			
-			<p>
-				Espécie:
-				<input type="radio" id="canina" name="especie" value="Canina">
-				<label for="canina">Canina</label>
+				Operação:
+				<input type="radio" id="soma" name="operacao" value="Soma">
+				<label for="soma">Soma (+)</label>
 				
-				<input type="radio" id="felina" name="especie" value="Felina">
-				<label for="felina">Felina </label>
+				<input type="radio" id="subtracao" name="operacao" value="Subtracao">
+				<label for="subtracao">Subtração (-)</label>
+				
+				<input type="radio" id="multiplicacao" name="operacao" value="Multiplicacao">
+				<label for="multiplicacao">Multiplicação (*)</label>
+				
+				<input type="radio" id="divisao" name="operacao" value="Divisao">
+				<label for="divisao">Divisão (/)</label>
 				
 			</p>
 			
-			<p><input type="submit" value="Cadastrar Animal"></p>
+			
+			
+			<p><input type="submit" value="Calcular"></p>
 			
 		</fielset>
 	</form>
