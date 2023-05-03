@@ -7,34 +7,28 @@
 <title>Resultado da operacao</title>
 </head>
 <body>
-
-
-	<%
-		int numero1 = Integer.parseInt(request.getParameter("numero1"));
-		int numero2 = Integer.parseInt(request.getParameter("numero2"));
-		String operacao = request.getParameter("operacao");
-		
-		
-		
-	%>
 	
 	<p> <%
+		int numero1 = Integer.parseInt(request.getParameter("numero1"));
+		int numero2 = Integer.parseInt(request.getParameter("numero2"));
+		int operacao = Integer.parseInt(request.getParameter("operacao"));
+	
 		try{
 	
-			out.print("<p>O resultado da operação de " + operacao + " de " + numero1 + " por " +numero2 
+			out.print("<p>O resultado da operação de " + numero1 + " e " +numero2 
 			+" é de </p>");
 			
 			int resultado = 0;
-			if (operacao == "Soma"){
+			if (operacao == 1){
 				resultado = numero1 + numero2;
 			} 
-			if (operacao == "Subtracao") {
+			if (operacao == 2) {
 				resultado = numero1 - numero2;
 			}
-			if (operacao == "Multiplicacao") {
+			if (operacao == 3) {
 				resultado = numero1 * numero2;
 			}
-			if (operacao == "Divisao"){
+			if (operacao == 4){
 				resultado = numero1 / numero2;
 			}
 			out.print("<h1>" + resultado + ".</h1>");
